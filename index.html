@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fraud detection</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+20&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../static/main.css">
+</head>
+<body>
+<form name="myForm" id="myForm">
+        <fieldset>
+                <legend>Fraud detector</legend>
+                <div id="data">
+        <section>
+            <label for="Amount">Amount:</label>
+            <input type="text" name="amount" id="Amount" required>
+        </section>
+        <section>
+            <label for="transactionTime">Transaction Time:</label>
+            <input type="time" name="transactiontime" id="Time">
+        </section>
+<section>
+    <label for="transactionDate">Transaction Date:</label>
+    <input type="date" name="transactiondate" id="tDate" placeholder="">
+</section>
+<section>
+    <label for="category">Category:</label>
+    <select name="category" id="Category">
+                        <option value="NULL">Please choose a category</option>
+                        <option value="entertainment">Entertainment</option>
+                        <option value="food_dining">Food Dining</option>
+                        <option value="gas_transport">Gas Transport</option>
+                        <option value="grocery_net">Grocery NET</option>
+                        <option value="grocery_pos">Grocery POS</option>
+                        <option value="health_fitness">Health Fitness</option>
+                        <option value="kids_pets">Kids Pets</option>
+                        <option value="misc_net">Misc NET</option>
+                        <option value="misc_pos">Misc POS</option>
+                        <option value="personal_care">Personal Care</option>
+                        <option value="shopping_net">Shopping Net</option>
+                        <option value="shopping_pos">Shopping POS</option>
+                        <option value="travel">Travel</option>
+                        <option value="kids_">Kids</option>
+                        <option value="home">Home</option>
+                    </select>
+                </section>
+                <section id="model_selection">
+                    <label for="category">Select Model:</label>
+                    <select name="model" id="Model">
+                        <option value="NULL">Please choose a category</option>
+                        <option value="randomForest">Random Forest</option>
+                        <option value="gradientboosting">gradient boosting</option>
+                        <option value="xgb">XGB</option>    
+                        <option value="logisticregression">Logistic Regression</option>    
+                        <option value="knn">KNN</option>
+                        <option value="decisiontree">Decision Tree</option>
+                    </select>
+                </section>
+                <section id="button">
+                    <button type="button" id="fCheck" onclick="onSubmit(this)">Fraud Check</button>
+                </section>
+            </div>
+            <!-- <div id="video">
+                <video  autoplay muted loop id="myVideo" data-tracking-url="/tracking/view/42967-hud-green-monitor-target" data-tracking-timeout="0" src="https://static.videezy.com/system/resources/previews/000/042/967/original/Techno_0009.mp4">…</video>
+            </div> -->
+            <div id="video">
+                <video tabindex="-1" role="application" id="vjs_video_3_html5_api" class="vjs-tech" loop muted autoplay src="https://cdn.pixabay.com/video/2021/09/02/87273-601148577_large.mp4"></video>
+            </div>
+                </fieldset>
+            </form>
+        </div>
+    </body>
+    <script src="../static/main.js"></script>
+</html>
